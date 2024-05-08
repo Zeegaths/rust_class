@@ -1,55 +1,64 @@
-
 fn main() {
-   //primitive data types
-    //number to string
-    let number_0 = 120;
+    let name = "Mary";
+    let number = 24;
+   
+    //signed and unsigned integers
+    let no1: i8 = 10;
+    let no2: u8 = 11;
 
-    let mut number_string = number_0.to_string();
+    let no3: i16 = 12;
+    let no4: u16 = 13;
 
-    number_string.push_str(" Get Together");
+    let no4: i32 = 14;
+    let no5: u32 = 15;
 
-    println!("Let's {number_string}");
+    let no6: i64 = 14;
+    let no7: u64 = 15;
 
-    //string to number
-    let input_1 = "-64";
-    let input_number: i32 = input_1.parse().expect("Not an integer");
+    let no8: i128 = 14;
+    let no9: u128 = 15;
 
-    println!("Hey {}", input_number);
+    let no10: isize = 14;
+    let no11: usize = 15;
 
+    let character : char = 's';
 
-
-    //as keyword
-    let number_2: i32 = 60;
-    let number_3: i64 = number_2 as i64;
-
-
-    
-    //Secondary data types  
-    //slices
-    let (data, status, reason) = do_some_maths(45, 22);
-
-    println!("sum = {data} was it success{status} reason: {reason}");
+    let float:f32 = 0.5;
 
 
-     //enums
-     const age:i32 = 10;
+    const text1: &str = "Welcome to Programming";
+    let text_2 :String = String::from("Hello....");
 
-     #[derive(Debug)] //attribute
-     enum STATUS {
-        ADULT,
-        CHILD,
-     }
+    let age_2 = {
+        12 +6
+    };
 
-     let user_status: STATUS = if age > 18 {
-        STATUS::ADULT
-     } else {
-        STATUS::CHILD
-     };
+    //calling the functions
+    sum(6, 8);
+    sum2(10, 20);
+    sum3(15, 5);
 
-     println!("The status is {:?}",user_status)
+
+    println!("float is {}", float);
+    println!("age is {}", age_2);
 }
 
-fn do_some_maths(par_1:i32, par_2:i32) -> (i32, bool, String) {
+//funtion without return value
+fn sum(number_1: i32, number_2: i32) {
+    let number_3 = number_1 + number_2;
+    println!("Sum of 1 and 2 {}", number_3);
+}
 
-    return(0, false, "execution failed".to_string())
+//function with return
+fn sum2(number_1: i32, number_2: i32)-> i32 {
+    let number_3 = number_1 + number_2;
+    println!("Sum of 1 and 2 {}", number_3);
+    return number_3;
+}
+
+//explicit declaration
+fn sum3(number_1: i32, number_2: i32)-> i32 {
+    let number_3 = number_1 + number_2;
+    println!("Sum of 1 and 2 {}", number_3);
+    number_3
 }
