@@ -3,5 +3,9 @@
 version = 3
 
 [[package]]
+<<<<<<< HEAD
 name = "lesson3"
+=======
+name = "data_types"
+>>>>>>> 2570d95 (more data types)
 version = "0.1.0"
