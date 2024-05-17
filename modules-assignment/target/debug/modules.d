@@ -1,0 +1,1 @@
+/home/mary/Documents/rust-class/modules-assignment/target/debug/modules: /home/mary/Documents/rust-class/modules-assignment/src/animals/mod.rs /home/mary/Documents/rust-class/modules-assignment/src/animals/reptiles.rs /home/mary/Documents/rust-class/modules-assignment/src/main.rs /home/mary/Documents/rust-class/modules-assignment/src/mammals.rs
