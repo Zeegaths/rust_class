@@ -1,17 +1,55 @@
-mod animals;
+// mod product;
+// use product::Book;
+// // struct  User{
+// //     name: String,
+// //     age: i32,
+// //     id_number: i32,
+// // }
+// // impl User {
+// //     pub fn walk(&self) {
+// //         println!("user {} is walking", &self.name)
+// //     }
+// //     pub fn eat(&self) {
+// //         println!("user {} is walking", self.name)
+// //     }
+// //     pub fn is_adult(&self) -> bool {
+// //         if self.age > 18 {
+// //             return true;
+// //         }
+// //         false        
+// //     }
+// // }
+ 
 
-use animals::reptiles;
+// //  struct Book {
+// //     pub name: String,
+// //     category: String,
+// //     status: bool
 
-fn main() {    
-    let reptiles = ["snake", "crocodile", "turtle"];
-    let result_1 = reptiles::print_reptiles(&reptiles);
+// //  }
+// fn main() {
+//     // let kenn = User{
+//     //     name: String::from("Kenn"), 
+//     //     age: 300,
+//     //     id_number: 34,
+//     // };
+//     // let result = kenn.is_adult();
+//     // println!("is kenn an adult: {}", result);
 
-    println!("The second result is {}", result_1);
+//     let cairo_book = Book::new(String::from("cairo_book"),String::from("leisure"), true);
+//     println!("Availability: {}", cairo_book.if_available())
+// }
 
-    // match result_1 {
-    //     Some(reptile) => println!("The second reptile is {}", reptile),
-    //     None => println!("There is no second reptile"),
-    // }
+// //calculate area of a rectangle(height, width) using knowledge of structs
 
-   
+
+mod area;
+use std::result;
+
+use area::Rectangle;
+fn main () {
+    let rect_1 = Rectangle::new(10, 10);
+    let result = rect_1.area();
+    println!("The area is {}", result);
 }
+
