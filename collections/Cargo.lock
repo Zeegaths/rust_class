@@ -3,5 +3,9 @@
 version = 3
 
 [[package]]
+<<<<<<< HEAD
 name = "collections"
+=======
+name = "vectors"
+>>>>>>> 92bb826016c5f29c563cc2f8c55e8c06d0062d89
 version = "0.1.0"
