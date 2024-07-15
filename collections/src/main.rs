@@ -1,5 +1,4 @@
 // fn main() {
-<<<<<<< HEAD
 //     // let x = vec![1, 2, 3, 4, 5];
 
 //     // #[doc = "This is the first solution to looping through the `vector`"]
@@ -240,7 +239,6 @@
 
 //http library- cargo- perfom a get request to any url
 //look at options and results
-=======
     // let  mut x = vec![1, 2, 3, 4, 5];
 
     // #[doc = "This is the first solution to looping through the `vector`"]
@@ -291,4 +289,3 @@ fn main () {
     maps.insert("Hello".to_string(), 40);
     println!("{:?}", maps);
 }
->>>>>>> 92bb826016c5f29c563cc2f8c55e8c06d0062d89

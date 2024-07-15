@@ -59,7 +59,7 @@ fn main(){
 
     //box move the item from stack to  heap
     fn create_multiples(factor: i32) -> Box<dyn Fn(i32) -> i32{
-        Box::new(|x| x + 1)
+        Box::new(|x| x + 1);
     }
 
    
