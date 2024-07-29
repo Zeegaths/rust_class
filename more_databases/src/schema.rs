@@ -7,6 +7,7 @@ diesel::table! {
         user_id -> Nullable<Int4>,
         borrowed_at -> Nullable<Timestamp>,
         interest_rate -> Nullable<Float8>,
+        amount_paid -> Nullable<Int4>,
     }
 }
 
@@ -18,6 +19,9 @@ diesel::table! {
         #[max_length = 150]
         email -> Nullable<Varchar>,
         sessiontoken -> Nullable<Int4>,
+        #[max_length = 255]
+        password -> Nullable<Varchar>,
+        loan_limit -> Nullable<Int4>,
     }
 }
 

@@ -6,5 +6,7 @@ create table loans (
     user_id int,
     FOREIGN KEY (user_id) REFERENCES users(id),
     borrowed_at timestamp without time zone default CURRENT_TIMESTAMP,
-    Interest_Rate float NOT NULL
+    interest_Rate float NOT NULL,
+    amount_paid float NOT NULL
+
 );

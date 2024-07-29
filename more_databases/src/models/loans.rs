@@ -10,6 +10,8 @@ pub struct Loans {
     pub user_id: Option<i32>,          // Changed to Option<i32>
     pub borrowed_at: Option<NaiveDateTime>,  // Changed to Option<NaiveDateTime>
     pub interest_rate: Option<f64>,    // Changed to Option<f64>
+    pub amount_paid: Option<f64>,
+    pub loan_limit: i32,
 }
 
 #[derive(Queryable, Selectable, Debug, Insertable)]

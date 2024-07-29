@@ -1,1 +1,1 @@
-/home/zee/Documents/rust_class/more_databases/target/debug/loans: /home/zee/Documents/rust_class/more_databases/src/main.rs /home/zee/Documents/rust_class/more_databases/src/models/loans.rs /home/zee/Documents/rust_class/more_databases/src/models/mod.rs /home/zee/Documents/rust_class/more_databases/src/models/users.rs /home/zee/Documents/rust_class/more_databases/src/schema.rs
+/home/zee/Documents/rust_class/more_databases/target/debug/loans: /home/zee/Documents/rust_class/more_databases/src/main.rs

@@ -8,6 +8,7 @@ pub struct Users {
     pub name: Option<String>,  // Changed to Option<String>
     pub email: Option<String>, // Changed to Option<String>
     pub sessiontoken: Option<i32>, // Changed to Option<i32>
+    pub password: String,
 }
 
 #[derive(Queryable, Selectable, Debug, Insertable)]
@@ -17,4 +18,5 @@ pub struct NewUser {
     pub name: Option<String>,  // Changed to Option<String>
     pub email: Option<String>, // Changed to Option<String>
     pub sessiontoken: Option<i32>, // Changed to Option<i32>
+    pub password: String,
 }
